@@ -7,10 +7,13 @@
     "test": "jest"
   },
   "dependencies": {
+    "axios": "^0.16.1",
+    "lodash": "^4.17.4",
     "react": "16.0.0-alpha.6",
     "react-native": "0.43.3",
     "react-native-router-flux": "^3.38.0",
     "react-redux": "^5.0.4",
+    "realm": "^1.2.0",
     "redux": "^3.6.0",
     "redux-thunk": "^2.2.0"
   },
