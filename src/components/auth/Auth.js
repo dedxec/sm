@@ -15,12 +15,13 @@ class Auth extends Component{
         };
     }
     onLoginSubmit(){
+        console.log("login form clicked");
         let mobile = this.props.mobile;
         let password = this.props.password;
         this.props.LoginUser({ mobile : mobile,password:password});
     }
     onRegisterSubmit(){
-        console.log("SDfdsfsdfsd");
+        console.log("register form clicked");
         let mobile = this.props.mobile;
         let password = this.props.password;
         this.props.RegisterUser({ mobile : mobile,password:password});

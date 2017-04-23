@@ -2,9 +2,10 @@
  * Created by taranjeetsingh on 16/04/17.
  */
 import axios from 'axios';
+import rootUrl from './root_url';
 export const LoginUser = ({ mobile,password }) => {
     return (dispatch) => {
-        axios.post('https://taranjeet-server.herokuapp.com/signup')
+        axios.post(rootUrl+'signup')
             .then((res) => {
             console.log(res.data);
             dispatch({
@@ -20,7 +21,7 @@ export const LoginUser = ({ mobile,password }) => {
 export const RegisterUser = ({ mobile,password }) => {
     return (dispatch) => {
         console.log("SDfdsfsd");
-        axios.post("https://taranjeet-server.herokuapp.com/signup",{
+        axios.post(rootUrl+"signup",{
             email : mobile,password
         })
             .then((res) => {
